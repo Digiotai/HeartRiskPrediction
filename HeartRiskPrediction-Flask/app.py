@@ -3,6 +3,8 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier() 
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 #Step -2 Flask constructor takes the name of  
